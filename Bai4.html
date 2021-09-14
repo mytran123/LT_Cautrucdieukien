@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="number1" placehoder="Nhập vào số thứ 1"/>
+    <input type="text" id="number2" placehoder="Nhập vào số thứ 2"/>
+    <input type="text" id="number3" placehoder="Nhập vào số thứ 3"/>
+    <input type="button" onclick="tinh()" value="Check"/>
+</form>
+<script>
+    //Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó
+    function tinh() {
+        let a = +document.getElementById("number1").value;
+        let b = +document.getElementById("number2").value;
+        let c = +document.getElementById("number3").value;
+        if (a > b && a > c) {
+            alert("a là số lớn nhất")
+        } else if (b > c) {
+            alert("b là số lớn nhất")
+        } else {
+            alert("c là số lớn nhất")
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
