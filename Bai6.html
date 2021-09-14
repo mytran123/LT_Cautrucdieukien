@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="doanhso" placeholder="Nhập giá trị doanh số (triệu): "/>
+    <input type="button" onclick="tinhhoahong()" value="Tính"/>
+</form>
+<script>
+    //Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng
+    function tinhhoahong() {
+        let ds = +document.getElementById("doanhso").value;
+        let hh1 = ds * 5 / 100;
+        let hh2 = ds * 10 / 100;
+        let hh3 = ds * 20 / 100;
+        if (ds <= 100) {
+            alert("Hoa hồng được nhận là" + hh1 + "triệu");
+        } else if (ds <= 300) {
+            alert("Hoa hồng được nhận là" + hh2 + "triệu");
+        } else {
+            alert ("Hoa hổng nhận được là" + hh3 + "triệu");
+        }
+    }
+</script>
+</body>
+</html>
